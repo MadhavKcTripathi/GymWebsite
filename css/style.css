@@ -151,31 +151,65 @@ header .ham-burger.active span:nth-child(2){
 	display: flex;
 	position: relative;
 }
-.home .go-down{
+.home .go-down {
   position: absolute;
   bottom: 50px;
   width: 260px;
-  height:40px;
-  border:1px solid #ffffff;
+  height: 40px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Shiny gradient */
+  border: none;
   display: block;
-  border-radius:4px;
+  border-radius: 20px; /* Rounded corners */
   text-align: center;
-  left:50%;
-  margin-left: -13px;
+  line-height: 40px; /* Center the text vertically */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Button shadow */
+  transition: all 0.3s ease; /* Smooth transition */
 }
-.home .go-down .fa{
-	color:#ffffff;
-	-webkit-animation: goDown 1s ease infinite;
-	animation: goDown 1s ease infinite;
+
+.home .go-down:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Larger shadow on hover */
+  transform: translateX(-50%) translateY(-2px); /* Slight upward movement */
 }
-@-webkit-keyframes goDown{
-	0%{transform: translateY(0);opacity:.5}
-	100%{transform: translateY(10px);}
+
+.home .go-down:active {
+  transform: translateX(-50%) translateY(2px); /* Slight downward movement on click */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Reduced shadow on click */
 }
-@keyframes goDown{
-	0%{transform: translateY(0);opacity:.5}
-	100%{transform: translateY(10px);}
+
+.home .go-down .fa {
+  color: #ffffff;
+  margin-right: 8px; /* Adds spacing between the icon and text */
+  -webkit-animation: goDown 1s ease infinite;
+  animation: goDown 1s ease infinite;
 }
+
+@-webkit-keyframes goDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes goDown {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 .home .container{
   -webkit-display: flex;
   display: flex;
