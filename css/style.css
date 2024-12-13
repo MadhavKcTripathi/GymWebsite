@@ -144,7 +144,7 @@ header .ham-burger.active span:nth-child(2){
 /*Home section*/
 .home{
 	height: 100vh;
-	background-image: url('../images/home.jpg');
+	background-image: url('https://github.com/MadhavKcTripathi/GymWebsite/blob/main/images/price2.jpg?raw=true');
 	background-size: cover;
 	padding:15px;
 	-webkit-display: flex;
@@ -154,7 +154,7 @@ header .ham-burger.active span:nth-child(2){
 .home .go-down{
   position: absolute;
   bottom: 50px;
-  width: 26px;
+  width: 260px;
   height:40px;
   border:1px solid #ffffff;
   display: block;
