@@ -627,7 +627,7 @@ header .ham-burger.active span:nth-child(2){
 
 .price-package{
 	padding: 80px 0px;
-	background-color: #d8ff57;
+	background-color: #ffffff;
 }
 .price-package h2{
 	font-size: 30px;
@@ -690,7 +690,7 @@ header .ham-burger.active span:nth-child(2){
 .price-package .content .box .inner .text .btn{
     padding: 8px 30px;
     background-color: #c11325;
-    color: #d8ff57;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     border: 1px solid transparent;
